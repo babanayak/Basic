@@ -27,7 +27,7 @@ public class DatetimeBasics {
 		String date2=formatter.format(date1);
 		System.out.println(date2);
 		System.out.println(date1.getTime());
-		System.out.println(formatter.format(date4));
+		System.out.println(formatter.format(date4)+" abc");
 		System.out.println(date5);
 		System.out.println(date7.compareTo(date1));
 		long time=new Date().getTime();
@@ -35,13 +35,13 @@ public class DatetimeBasics {
 		
 		String date9 = "2011-08-12T20:17:46.384Z";
 		String date10 = "2011-08-12T20:18:46.384Z";
-		SimpleDateFormat formatter3=new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat formatter3=new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 		Date date11=formatter3.parse(date9);
 		Date date15=formatter3.parse(date10);
 		SimpleDateFormat formatter5=new SimpleDateFormat("MM-dd-yyyy");
 		String date13=formatter5.format(date11);
 		System.out.println(date13);
-		System.out.println(date11+" abc");
+		System.out.println(date11.getTime()+" abc");
 		
 		
 		  String input_date="2012-08-11";
